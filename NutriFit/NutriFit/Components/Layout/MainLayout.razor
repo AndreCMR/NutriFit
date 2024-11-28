@@ -1,0 +1,32 @@
+﻿@inherits LayoutComponentBase
+
+<Layout>
+    <!-- Barra de Navegação -->
+    <Navbar Background="Background.Primary" ThemeContrast="ThemeContrast.Dark">
+        <NavbarBrand>
+            <span>My Health App</span>
+        </NavbarBrand>
+        <NavbarToggler />
+        <NavbarMenu>
+            <NavbarItem>
+                <Link href="/">Home</Link>
+            </NavbarItem>
+            <NavbarItem>
+                <Link href="/login">Login</Link>
+            </NavbarItem>
+            <NavbarItem>
+                <Link href="/register">Register</Link>
+            </NavbarItem>
+        </NavbarMenu>
+    </Navbar>
+
+    <!-- Conteúdo Principal -->
+    <Container Class="mt-4">
+        @Body
+    </Container>
+
+    <!-- Rodapé -->
+    <footer class="text-center mt-4">
+        &copy; 2024 My Health App
+    </footer>
+</Layout>
